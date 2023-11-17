@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Listy3PPiatek</string>
+    <string-array name="mysli">
+        <item>Nic nie musisz wszystko możesz</item>
+        <item>Lepiej późno niż później</item>
+        <item>Wymagaj od siebie nawet gdyby inni nie wymagali</item>
+    </string-array>
 </resources>
