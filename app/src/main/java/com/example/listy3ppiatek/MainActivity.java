@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -41,10 +42,21 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        String mysl = editText.getText().toString();
-                        mysli.add(mysl);
+                        if(!editText.getText().toString().equals("🐢") && !editText.getText().toString().equals("")){
+                            String mysl = editText.getText().toString();
+                            mysli.add(mysl);
+                            adapter.notifyDataSetChanged();
+                            editText.setText("");
+                        }
+                    }
+                }
+        );
+        listViewMysli.setOnItemClickListener(
+                new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        mysli.remove(i);
                         adapter.notifyDataSetChanged();
-                        editText.setText("");
                     }
                 }
         );
