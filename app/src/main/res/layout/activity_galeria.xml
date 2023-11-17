@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GaleriaActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/pobrane" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/zdjecia"/>
+
+    <Button
+        android:id="@+id/buttonDalej"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dalej" />
+
+    <Button
+        android:id="@+id/buttonWstecz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wstecz" />
+
+    <RadioGroup
+        android:id="@+id/radioGrupa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gora ze śniegiem" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gorska łąka" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gora z dróżką" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonWyswietl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wyświetl" />
+</LinearLayout>

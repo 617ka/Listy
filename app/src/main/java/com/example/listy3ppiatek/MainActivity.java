@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,
                 mysli
         );
+
         listViewMysli = findViewById(R.id.listView2);
         listViewMysli.setAdapter(adapter);
 

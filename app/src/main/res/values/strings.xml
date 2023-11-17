@@ -5,4 +5,10 @@
         <item>Lepiej późno niż później</item>
         <item>Wymagaj od siebie nawet gdyby inni nie wymagali</item>
     </string-array>
+
+    <string-array name="zdjecia">
+        <item>Gora ze śniegiem</item>
+        <item>Gorska łąka</item>
+        <item>Gora z dróżką</item>
+    </string-array>
 </resources>
